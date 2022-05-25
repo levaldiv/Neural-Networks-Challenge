@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Self-Driving Car - No Libraries</title>
+  </head>
+
+  <body>
+    <canvas id="carCanvas"></canvas>
+
+    <!-- Buttons -->
+    <div id="verticalBtns">
+      <button onclick="save()">🚀</button>
+      <button onclick="discard()">😞</button>
+      <button onclick="addTraffic()">🚗</button>
+    </div>
+
+    <canvas id="networkCanvas"></canvas>
+    <!-- ordering of the scripts DOEES MATTER -->
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
